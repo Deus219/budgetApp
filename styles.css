@@ -1,0 +1,213 @@
+/******************************* TAG SELECTORS ****************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edf6f9;
+    font-family: 'Merriweather', serif;
+    color: #2f3e46;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+/******************************* ID SELECTORS ****************************/
+
+#amount__earned,
+#earned__symbol {
+    color: #43aa8b;
+}
+
+#amount__spent,
+#spent__symbol {
+    color: #bc4749;
+}
+
+#add__income {
+    background-color: #43aa8b;
+}
+
+#add__expense {
+    background-color: #bc4749;
+}
+
+/******************************* CLASS SELECTORS ****************************/
+
+.header{
+    padding: 1.5rem;
+    background-color: #2f3e46;
+    text-align: center;
+}
+
+.title__header {
+    color: #edf6f9;
+    font-size: 3rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    display: inline-block;
+}
+
+.title__icon {
+    color: #edf6f9;
+    font-size: 3rem;
+    margin: 0 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.budget__numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 700px;
+    margin: 1rem 0 3rem;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.buttons__area {
+    margin: 30px 0 0;
+    width: 513px;
+    text-align: center;
+}
+
+.items__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+    border-style: solid;
+    border-width: 3px 3px 3px 1.5px;
+}
+
+.item__income,
+.item__expense {
+    display: flex;
+}
+
+.numbers__icons {
+    display: block;
+    margin: 1.3rem;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.numbers {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.input__container {
+    padding: 50px;
+    border-style: solid;
+    border-width: 3px 1.5px 3px 3px;
+    width: 50%;
+}
+
+.transactions__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/******************************* COMBINED SELECTORS ****************************/
+
+.input__area input {
+    border: solid 2px;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    margin: 10px 10px 20px 0;
+    display: block;
+    width: 90%;
+}
+
+.buttons__area button {
+    margin: 0 15px;
+}
+
+.buttons__area #add__income,
+.buttons__area #add__expense {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    border-width: 2px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container .item {
+    width: 70%;
+    background-color: white;
+    border: solid 2px;
+    border-radius: 3px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px 5px 10px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.income span,
+.income p {
+    color: #43aa8b;
+}
+
+.expense span,
+.expense p {
+    color: #bc4749;
+}
+
+.item .far {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #bc4749;
+    cursor: pointer;
+    opacity: 0;
+    font-size: small;
+}
+
+.item:hover .far {
+    opacity: 1;
+}
+
+/* remove arrows from number input */
+.input__area input::-webkit-outer-spin-button,
+.input__area input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
